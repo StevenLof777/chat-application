@@ -19,6 +19,7 @@
   "homepage": "https://github.com/StevenLof777/chat-application#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "nodemon": "^2.0.15",
     "socket.io": "^4.4.1"
   }
 }
