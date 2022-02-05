@@ -16,14 +16,20 @@ body {
     background: rgba(0, 0, 0, 0.15); 
     padding: 0.25rem; 
     position: fixed;
-    bottom: 20%; 
-    left: 20%; 
-    right: 20%; 
+    bottom: 0; 
+    min-width: 720px;
     display: flex;
     max-height: 3rem; 
     box-sizing: border-box; 
     backdrop-filter: blur(10px);
 }
+
+/* .message-container {
+    bottom: 20%; 
+    left: 20%; 
+    right: 20%;
+    border: solid greenyellow;
+} */
 
 #input { 
     border: none; 
@@ -51,10 +57,20 @@ body {
     list-style-type: none; 
     margin: 0; 
     padding: 0; 
+    /* left: 0; 
+    right: 0;
+    border: solid hotpink; */
 }
 
 #messages > li { 
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1rem;
+    background-color: #e9eeea
 }
 
-#messages > li:nth-child(odd) { background: #efefef; }
+#messages > li:nth-child(odd) {
+     background: white; 
+}
+
+.message-container {
+    max-width: 720px;
+}
