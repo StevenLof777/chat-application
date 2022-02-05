@@ -1,4 +1,60 @@
+:root {
+    --dark-blue: #1B4079;
+    --teal: #4D7C8A;
+    --maroon: #B75D69;
+    --beige: #DDC9B4;
+    --mint-green: #C9E4CA;
+    --white: #ffffff;
+    --black: #000000;
+  }
+
 body {
-    background-color: blanchedalmond;
+    background-color: var(--beige);
 }
 
+#form { 
+    background: rgba(0, 0, 0, 0.15); 
+    padding: 0.25rem; 
+    position: fixed;
+    bottom: 20%; 
+    left: 20%; 
+    right: 20%; 
+    display: flex;
+    max-height: 3rem; 
+    box-sizing: border-box; 
+    backdrop-filter: blur(10px);
+}
+
+#input { 
+    border: none; 
+    padding: 0 1rem; 
+    flex-grow: 1; 
+    border-radius: 2rem; 
+    margin: 0.25rem; 
+}
+
+#input:focus { 
+    outline: none; 
+}
+
+#form > button { 
+    background: var(--dark-blue);
+    border: none;
+    padding: 0 1rem; 
+    margin: 0.25rem; 
+    border-radius: 3px; 
+    outline: none; 
+    color: #fff; 
+}
+
+#messages { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#messages > li { 
+    padding: 0.5rem 1rem; 
+}
+
+#messages > li:nth-child(odd) { background: #efefef; }
